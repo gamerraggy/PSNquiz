@@ -1,0 +1,121 @@
+// Sep 26th, 2024
+// Javi's playstation quiz
+
+#include<iostream> 
+using namespace std;
+int main() {
+
+	// set up variables for characters
+	int Astro = 0;
+	int Kratos = 0;
+	int Spiderman = 0;
+	int Sackboy = 0;
+	string answer;
+	// question 1----------------------------------------------------
+	cout << "what is your favorite color?" << endl;
+	cout << "OPTIONS: Blue, White, Red, Black" << endl;
+	cin >> answer;
+	if (answer == "Blue")
+		Astro += 1;
+	else if (answer == "White")
+		Kratos += 1;
+	else if (answer == "Red")
+		Spiderman += 1;
+	else if (answer == "Black")
+		Sackboy += 1;
+	else
+		cout << "Not an option" << endl;
+
+	// question 2--------------------------------------------------------
+	cout << "What is your favorite pet?" << endl;
+	cout << "OPTIONS: Spider, Dog, Cat, None" << endl;
+	cin >> answer;
+	if (answer == "Spider")
+		Spiderman += 1;
+	else if (answer == "Dog")
+		Astro += 1;
+	else if (answer == "Cat")
+		Sackboy += 1;
+	else if (answer == "None")
+		Kratos += 1;
+	else
+		cout << "Not an option" << endl;
+
+	// question 3-------------------------------------------------------------
+	cout << "What would you do with a day off?" << endl;
+	cout << "OPTIONS: Explore, Train, Rest, Swing" << endl;
+	cin >> answer;
+	if (answer == "Explore")
+		Astro += 1;
+	else if (answer == "Train")
+		Kratos += 1;
+	else if (answer == "Rest")
+		Sackboy += 1;
+	else if (answer == "Swing")
+		Spiderman += 1;
+	else
+		cout << "Not an option" << endl;
+	//question 4----------------------------------------------------------
+    cout << "What genre of game do you perfer?" << endl;
+    cout << "OPTIONS: Action, Adventure, Puzzle, or RPG" << endl;
+    cin >> answer;
+    if (answer == "Action")
+        Kratos += 1;
+    else if (answer == "Adventure")
+        Sackboy += 1;
+    else if (answer == "Puzzle")
+        Astro += 1;
+    else if (answer == "RPG")
+        Spiderman += 1;
+    else
+        cout << "Not an option" << endl;
+    //question 5--------------------------------------------------------
+    cout << "What environment do you like the most?" << endl;
+    cout << "OPTIONS: City, Space, Forest, or Mystical" << endl;
+    cin >> answer;
+    if (answer == "City")
+        Spiderman += 1;
+    else if (answer == "Space")
+        Astro += 1;
+    else if (answer == "Forest")
+        Sackboy += 1;
+    else if (answer == "Mystical")
+        Kratos += 1;
+    else
+        cout << "NOT AN OPTION" << endl;
+    //question 6-----------------------------------------------------
+    cout << "What is your ideal gaming companion?" << endl;
+    cout << "OPTIONS: Sidekick, Mentor, Friends, or Solo" << endl;
+    cin >> answer;
+    if (answer == "Sidekick")
+        Sackboy += 1;
+    else if (answer == "Mentor")
+        Kratos += 1;
+    else if (answer == "Friends")
+        Spiderman += 1;
+    else if (answer == "Solo")
+        Astro += 1;
+    else
+        cout << "Not an option" << endl;
+    //question 7------------------------------------------------
+    cout << "What motivates you in a game" << endl;
+    cout << "OPTIONS: Achievements, Storyline, Exploration, or Combat" << endl;
+    cin >> answer;
+    if (answer == "Achievements")
+        Kratos += 1;
+    else if (answer == "Storyline")
+        Spiderman += 1;
+    else if (answer == "Exploration")
+        Astro += 1;
+    else if (answer)
+	//Winner
+	if (Astro >= Kratos && Astro >= Spiderman && Astro >= Sackboy)
+		cout << "You are Astro!" << endl; 
+	else if (Kratos >= Spiderman && Kratos >= Sackboy)
+		cout << "You are Kratos..." << endl;
+	else if (Spiderman >= Sackboy)
+		cout << "You are.. Spiderman!!" << endl;
+	else
+		cout << "you are Sackboy!!!" << endl;
+
+}
