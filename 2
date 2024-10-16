@@ -1,4 +1,4 @@
-// Sep 26th, 2024
+// Oct 15th, 2024
 // Javi's playstation quiz
 
 #include<iostream> 
@@ -107,7 +107,24 @@ int main() {
         Spiderman += 1;
     else if (answer == "Exploration")
         Astro += 1;
-    else if (answer)
+    else if (answer == "Combat")
+        Sackboy += 1;
+    else 
+        cout << "Whats up sigma" << endl;
+    //question 8//////////////////////////////////////////////////////
+    cout << "What is your favorite character" << endl;
+    cout << "OPTIONS: Kratos, Spiderman, Astro, Sackboy" << endl;
+    cin >> answer;
+    if (answer == "Kratos")
+        Kratos += 2;
+    else if (answer == "Spiderman")
+        Spiderman += 2;
+    else if (answer == "Astro")
+        Astro += 2;
+    else if (answer == "Sackboy")
+        Sackboy += 2;
+    else
+        cout << "Not an option" << endl;
 	//Winner
 	if (Astro >= Kratos && Astro >= Spiderman && Astro >= Sackboy)
 		cout << "You are Astro!" << endl; 
