@@ -1,0 +1,85 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int room = 1;
+	string input = "chicken";
+
+	while (input != "quit") { // game loop!
+		switch (room) {
+		case 1:
+			cout << "You walk up a stairway into a hallway and see two rooms... (You can go east or west.)" << endl;
+			cin >> input;
+			if (input == "east")
+				room = 2;
+			else if (input == "west")
+				room = 3;
+			else if (input == "down")
+				cout << "Dont be lame" << endl;
+			else
+				cout << "Sorry! Not an option (Remember its capital sensitive)" << endl;
+			break;
+		case 2:
+			cout << "You walk into an armory, you seen a barricaded window (You can go west.)" << endl;
+			cin >> input;
+			if (input == "west")
+				room = 1;
+			else if (input == "grab")
+				cout << "You don't know how to use one of those silly!" << endl;
+			else
+				cout << "Thats not an option..." << endl;
+			break;
+		case 3:
+			cout << "You walk into a room with many trophies.. (You can go south, east, or west,)" << endl;
+			cin >> input;
+			if (input == "south")
+				room = 11;
+			else if (input == "east")
+				room = 1;
+			else if (input == "west")
+				room = 4;
+			else if (input == "grab")
+				cout << "That isn't yours..." << endl;
+			else
+				cout << "Not an option" << endl;
+			break;
+		case 4:
+			cout << "You walk in to a room and you see a metal wall," << endl;
+			cout << "a foosball table, and a radio playing music... (You can go north, west, or east...)" << endl;
+			cin >> input;
+			if (input == "north")
+				room = 5;
+			else if (input == "east")
+				room = 3;
+			else if (input == "west")
+				room = 8;
+			else if (input == "radio")
+				cout << "You turned the radio off and you hear faint footsteps..." << endl;
+			else if (input == "foosball")
+				cout << "You don't have anyone to play FOOSBALL" << endl;
+			else
+				cout << "not an option!" << endl;
+			break;
+		case 5:
+			cout << "You walk into a empty attic... (You can go south or east)" << endl;
+			cin >> input;
+			if (input == "south")
+				room = 4;
+			else if (input == "east")
+				room = 6;
+			else
+				cout << "Not an option.." << endl;
+		case 6:
+			cout << "You explore the dusty attic (Return and go west or explore and go north)" << endl;
+			cin >> input;
+			if (input == "west")
+				room = 5;
+			else if (input == "north")
+				room = 7;
+			else
+				cout << "Not a option." << endl;
+
+		case 7:
+
+		}
+	}
+}
